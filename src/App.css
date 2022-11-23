@@ -1,38 +1,246 @@
-.App {
-  text-align: center;
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  position: fixed;
+  height: 10vh;
+  background-color: #2c3e50;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 3;
+  transition: 0.2s linear all;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header2 {
+  position: fixed;
+  height: 5vh;
+  background-color: #2c3e50;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 3;
+  transition: 0.2s linear all;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.content {
+  position: initial;
+  top: 10vh;
+  height: 100vh;
+  width: 100%;
+  background-color: #1abc96;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.portfolio {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0;
+  padding-left: 5%;
+  padding-top: 5%;
+  box-sizing: border-box;
+}
+.about {
+  height: 70vh;
+  width: 100%;
+  background-color: #f1c40f;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  height: 15vh;
+  background-color: #2c3e50;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a:hover h2 {
+  text-decoration: none;
+  color: #1abc96;
+  transition: all 400ms ease;
+}
+.name:hover {
+  color: #f1c40f;
+  transition: all 400ms ease;
+}
+.content-container {
+  height: 500px;
+}
+.imageBackground {
+  padding-top: 300px;
+}
+.imageSize {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.fontFooter {
   color: white;
+  font-size: 30px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+/* about page */
+@media (max-width: 991px) {
+  .about-text {
+    margin-top: 40px;
+  }
+}
+.about-text h3 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+@media (max-width: 767px) {
+  .about-text h3 {
+    font-size: 35px;
+  }
+}
+.about-text h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .about-text h4 {
+    font-size: 18px;
+  }
+}
+.about-text p {
+  font-size: 18px;
+}
+.about-text p mark {
+  font-weight: 600;
+  color: #3a3973;
+}
+.about-text .btn-bar {
+  padding-top: 8px;
+}
+.about-text .btn-bar a {
+  min-width: 150px;
+  text-align: center;
+  margin-right: 10px;
+}
+.about-list {
+  padding-top: 10px;
+}
+.about-list .media {
+  padding: 5px 0;
+}
+.about-list label {
+  color: #3a3973;
+  font-weight: 600;
+  width: 88px;
+  margin: 0;
+  position: relative;
+}
+.about-list p {
+  margin: 0;
+  font-size: 15px;
+}
+.about-img {
+  box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.06);
+  padding: 10px;
+  background: #ffffff;
+}
+@media (max-width: 991px) {
+  .about-img {
+    margin-top: 30px;
+  }
+}
+.counter-section {
+  padding: 40px 20px;
+}
+.counter-section .count-data {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.counter-section .count {
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+.counter-section p {
+  font-weight: 500;
+  margin: 0;
+  color: #fe4f6c;
+}
+.theme-color {
+  color: #fe4f6c;
+}
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+.gray-bg {
+  background-color: #ebf4fa;
+}
+.px-btn.theme {
+  background: #fe4f6c;
+  color: #ffffff;
+  border: 2px solid #fe4f6c;
+}
+.px-btn {
+  padding: 0 20px;
+  line-height: 42px;
+  border: 2px solid transparent;
+  position: relative;
+  display: inline-block;
+  background: none;
+  border: none;
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.px-btn.theme-t {
+  background: transparent;
+  border: 2px solid #fe4f6c;
+  color: #fe4f6c;
+}
+.addPaddingTop {
+  padding-top: 50px;
+}
+.logoSize {
+  height: 75px;
+  align-items: center;
+}
+.portfolioLogo {
+  height: 320px;
+  width: 320px;
+}
+.circleBorder {
+  border-radius: 50%;
+}
+.portfolioLogo:hover {
+  scale: 1.5;
+  transition: ease all 0.35s;
 }
 
-.App-link {
-  color: #61dafb;
+.contactbg {
+  background-color: #eee;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.borderRadius25 {
+  border-radius: 25px;
 }
